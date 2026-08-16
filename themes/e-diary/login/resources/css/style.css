@@ -1,0 +1,94 @@
+:root {
+  --ediary-bg: #f3efe6;
+  --ediary-ink: #1f2933;
+  --ediary-muted: #5b6770;
+  --ediary-primary: #0f766e;
+  --ediary-primary-hover: #0d9488;
+  --ediary-card: #fffcf7;
+  --ediary-line: #e4dccb;
+
+  --pf-v5-global--primary-color--100: var(--ediary-primary);
+  --pf-v5-global--primary-color--200: var(--ediary-primary-hover);
+  --pf-v5-global--link--Color: var(--ediary-primary);
+  --pf-v5-global--link--Color--hover: var(--ediary-primary-hover);
+  --pf-v5-c-button--m-primary--BackgroundColor: var(--ediary-primary);
+  --pf-v5-c-button--m-primary--hover--BackgroundColor: var(--ediary-primary-hover);
+}
+
+.login-pf body,
+.login-pf {
+  background: var(--ediary-bg) !important;
+  color: var(--ediary-ink);
+}
+
+.login-pf body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 47px,
+    rgba(15, 118, 110, 0.05) 48px
+  );
+}
+
+#kc-header {
+  margin-bottom: 1.5rem;
+}
+
+#kc-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--ediary-ink) !important;
+  font-size: 2rem !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: none !important;
+  text-shadow: none !important;
+}
+
+#kc-header-wrapper::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  background: url("../img/logo.svg") center / contain no-repeat;
+}
+
+.pf-v5-c-login__main,
+.card-pf {
+  background: var(--ediary-card) !important;
+  border: 1px solid var(--ediary-line) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 18px 40px rgba(31, 41, 51, 0.08) !important;
+}
+
+.pf-v5-c-login__main-header {
+  border-bottom: 1px solid var(--ediary-line);
+}
+
+.pf-v5-c-title,
+#kc-page-title {
+  color: var(--ediary-ink) !important;
+}
+
+.pf-v5-c-form-control {
+  border-radius: 10px !important;
+}
+
+.pf-v5-c-button.pf-m-primary {
+  border-radius: 10px !important;
+  font-weight: 600;
+}
+
+.pf-v5-c-login__main-footer-band {
+  background: transparent !important;
+  color: var(--ediary-muted);
+}
+
+a {
+  color: var(--ediary-primary);
+}
