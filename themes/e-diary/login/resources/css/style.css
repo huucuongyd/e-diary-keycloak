@@ -92,3 +92,20 @@
 a {
   color: var(--ediary-primary);
 }
+
+.ediary-register-lead {
+  color: var(--ediary-muted);
+  margin: 0 0 1.25rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+#kc-register-form #kc-form-buttons {
+  margin-top: 1.25rem;
+}
+
+#kc-register-form .pf-v5-c-login__main-footer-band {
+  margin-top: 1rem;
+  text-align: center;
+}
